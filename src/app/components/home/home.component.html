@@ -1,0 +1,90 @@
+<app-barra></app-barra>
+
+<img src="assets\f2.jpg" class="img_back">
+
+<div class="content" role="main">
+
+        <div class="card highlight-card card-small" routerLink="/tiendas">
+            <img
+            width="50"
+            alt="Angular Logo"
+            src="assets\l1.png">
+          
+          <span>TIENDAS</span>
+        </div>
+
+       <!--  <div class="card highlight-card card-small" >
+            <img
+            width="30"
+            alt="Angular Logo"
+            src="assets\icon.png"
+          />
+          <span>TALLERES</span>  
+        </div>  -->
+
+
+        <!-- Resources -->
+        <h2>Estamos creciendo </h2>
+        <p>Gracias por apoyarnos.</p>
+      
+        <div class="card-container">
+          <a class="card" routerLink="/tiendas">
+          <img
+            width="50"
+            src="assets\l1.png"
+          />
+            <span>TIENDAS</span>
+            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    </a>
+      
+      
+          <a class="card"  href="https://www.mtbpro.es/eventos">
+            <img
+            width="30"
+            src="assets\calendario.png"
+          />
+            <span>EVENTOS</span>
+            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+          </a>
+      
+          <a class="card" href="https://www.google.com.mx/maps/search/talleres+bike/@16.74502,-93.1429258,13.5z">
+            <img
+            width="30"
+            src="assets\icon.png"
+          />
+            <span>TALLERES</span>
+      
+            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+          </a>
+      
+        </div>
+        
+      
+        <!-- Next Steps -->
+        <h2>Proximas acciones</h2>
+        <p>¿ Gustas promocionarte ? </p>
+      
+        <input type="hidden" #selection>
+      
+        <div class="card-container">
+          <div class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+            <span>Nueva accion</span>
+          </div>
+      
+          <div class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+              <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+            <span>Nueva accion</span>
+          </div>
+      
+          <div class="card card-small" (click)="selection.value = 'dependency'" tabindex="0">
+            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+            <span>Nueva accion</span>
+          </div>
+      
+          <div class="card card-small" (click)="selection.value = 'test'" tabindex="0">
+            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+            <span>Nueva accion</span>
+          </div>
+      
+        </div>
+      
