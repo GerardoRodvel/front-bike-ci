@@ -9,16 +9,16 @@ import { TiendasComponent } from './components/tiendas/tiendas.component';
 
 const routes: Routes = [
   {
-    path:'home',
-    component:HomeComponent
+    path: 'home',
+    component: HomeComponent
   },
   {
-    path:'home',
-    component:HomeComponent
+    path: 'home',
+    component: HomeComponent
   },
   {
-    path:'tiendas',
-    component:TiendasComponent
+    path: 'tiendas',
+    component: TiendasComponent
   }
 ];
 
