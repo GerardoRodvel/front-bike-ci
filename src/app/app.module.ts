@@ -2,27 +2,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { RouterModule, Routes} from '@angular/router';
+import { Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { BarraComponent } from './components/barra/barra.component';
 import { TiendasComponent } from './components/tiendas/tiendas.component';
 
-
-
 const routes: Routes = [
   {
-    path:'',
-    component:HomeComponent
-
-  },
-  {
-    path: 'home',
+    path:'home',
     component:HomeComponent
   },
   {
-    path: 'tiendas',
+    path:'home',
+    component:HomeComponent
+  },
+  {
+    path:'tiendas',
     component:TiendasComponent
   }
-
 ];
 
 @NgModule({
@@ -30,7 +27,7 @@ const routes: Routes = [
     AppComponent,
     HomeComponent,
     BarraComponent,
-    TiendasComponent,
+    TiendasComponent
   ],
   imports: [
     BrowserModule,
